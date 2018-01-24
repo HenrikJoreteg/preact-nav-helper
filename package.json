@@ -1,7 +1,7 @@
 {
   "name": "preact-nav-helper",
   "description": "Preact component for catching and handling internal links in your application.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Henrik Joreteg <henrik@joreteg.com> (joreteg.com)",
   "bugs": {
     "url": "https://github.com/henrikjoreteg/preact-nav-helper/issues"

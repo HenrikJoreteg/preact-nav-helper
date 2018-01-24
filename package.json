@@ -1,0 +1,32 @@
+{
+  "name": "preact-nav-helper",
+  "description": "Preact component for catching and handling internal links in your application.",
+  "version": "0.0.0",
+  "author": "Henrik Joreteg <henrik@joreteg.com> (joreteg.com)",
+  "bugs": {
+    "url": "https://github.com/henrikjoreteg/preact-nav-helper/issues"
+  },
+  "devDependencies": {
+    "microbundle": "0.4.1"
+  },
+  "homepage": "https://github.com/henrikjoreteg/preact-nav-helper",
+  "keywords": [
+    "preact",
+    "redux-bundler"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.m.js",
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrikjoreteg/preact-nav-helper"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "start": "microbundle watch"
+  },
+  "source": "src/index.js"
+}

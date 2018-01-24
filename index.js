@@ -1,0 +1,2 @@
+var e=require("preact"),n=function(e){return"A"===e.tagName?e:e.parentElement?n(e.parentElement):null},t=function(e){return e&&e.origin===window.location.origin?e.href.replace(window.location.origin,""):null};function r(r){var a=r.onInternalNav,i=r.children,l=r.className;return e.h("div",{className:l,onClick:function(e){var r=n(e.target);if(r&&"_blank"!==r.target){var i=t(r),l=e.ctrlKey||e.shiftKey||e.altKey||e.metaKey||0!==e.button;i&&!l&&(e.preventDefault(),a(i))}}},i)}module.exports=r;
+//# sourceMappingURL=index.js.map

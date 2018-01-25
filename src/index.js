@@ -17,19 +17,25 @@ const getLocalPathname = (a) => {
   return null
 }
 
-export default ({onInternalNav, children, className}) => (
-  h('div', {
-    className,
-    onClick: (e) => {
+export default class NavHelper {
+  componentDidMount() {
+    this.handleClick = handleClick = (e) => {
       const aTag = findA(e.target)
       if (aTag && aTag.target !== '_blank') {
         const url = getLocalPathname(aTag)
         const meta = e.ctrlKey || e.shiftKey || e.altKey || e.metaKey || e.button !== 0
         if (url && !meta) {
           e.preventDefault()
-          onInternalNav(url)
+          this.props.onInternalNav(url)
         }
       }
-    }
-  }, children)
-)
+    };
+    this.base.addEventListener('click', this.handleClick)
+  }
+  componentWillUnmount() {
+    this.base.removeEventListener('click', this.handleClick)
+  }
+  render(props) {
+    return props.children[0]
+  }
+}

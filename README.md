@@ -2,6 +2,8 @@
 
 ![](https://img.shields.io/npm/dm/preact-nav-helper.svg)![](https://img.shields.io/npm/v/preact-nav-helper.svg)![](https://img.shields.io/npm/l/preact-nav-helper.svg)
 
+**NOTE: Deprecated in lieu of [internal-nav-helper](https://github.com/HenrikJoreteg/internal-nav-helper). I realized there's no reason to tie this to a framework.**
+
 Preact component for catching and handling internal links in your application.
 
 Wrap your root application in this component and you can use regular plain ol' `<a>` tags in your application code but still handle the ones that are "internal" to the application using your application logic.
